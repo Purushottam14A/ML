@@ -1,0 +1,22 @@
+<html >
+<head>
+  <title>Machine Learning Model Deployment</title>
+</head>
+<body>
+ <div>
+    <h1>Predict Iris Species</h1>
+    <form action="{{ url_for('predict')}}" method="post">
+        <input type="text" name="A" placeholder="A" required="required" />
+        <input type="text" name="P" placeholder="P" required="required" />
+        <input type="text" name="C" placeholder="C" required="required" />
+        <input type="text" name="LK" placeholder="LK" required="required" />
+        <input type="text" name="WK" placeholder="WK" required="required" />
+        <input type="text" name="A_Coef" placeholder="A_Coef" required="required" />
+        <input type="text" name="LKG" placeholder="LKG" required="required" />
+        <button type="submit">Predict</button>
+    </form>
+   <br>
+   {{ prediction_text }}
+ </div>
+</body>
+</html>
